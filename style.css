@@ -1,0 +1,169 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-gray-ishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--Cream);
+    font-size: 14px;
+}
+
+.produit{
+    width: 375px;
+}
+
+.photo {
+    background: no-repeat center/cover url(./images/image-product-mobile.jpg);
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.infos {
+    background: white;
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.marque {
+    font-family: "Montserrat";
+    color: var(--Dark-gray-ishblue);
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.nom {
+    font-family: "Fraunces";
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--Very-dark-blue);
+}
+
+.description {
+    color: var(--Dark-gray-ishblue);
+    font-family: "Montserrat";
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding-right: 45px;
+    font-weight: 500;
+}
+
+.price {
+    color: var(--Dark-cyan);
+    font-family: "Fraunces";
+    font-size: 25px;
+    display: flex;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px var(--Dark-cyan);
+}
+
+.ancien {
+    color: var(--Dark-gray-ishblue);
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-decoration : line-through;
+    text-shadow: 0px 0px 0px;
+}
+
+button {
+    background: var(--Dark-cyan);
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+}
+
+img {
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 1080px) {
+
+    .produit {
+        display: flex;
+        width: 700px;
+        height: 600px;
+        justify-content: center;
+    }
+
+    .infos {
+        background: white;
+        width: 350px;
+        padding: 20px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+    
+    .photo {
+        background: no-repeat center/cover url(./images/image-product-desktop.jpg);
+        height: 600px;
+        width: 350px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    .marque {
+        padding: 25px;
+        font-size: 14px;
+    }
+
+    .nom {
+        padding: 25px;
+        padding-top: 0;
+        font-size: 18px;
+        padding-right: 50px;
+    }
+
+    .description {
+        font-size: 14px;
+        padding: 25px;
+        padding-top: 0;
+        padding-right: 50px;
+        line-height: 30px;
+    }
+
+    .price {
+        padding: 25px;
+        padding-top: 0;
+        font-size: 22px;
+    }
+
+    .ancien {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 20px 0;
+        font-size: 15px;
+    }
+
+    img {
+        width: 25px;
+    }
+
+    button {
+        margin-top: 0;
+        width: 250px;
+        margin-left: 25px;
+    }   
+    
+}
